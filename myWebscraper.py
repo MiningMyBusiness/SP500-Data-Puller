@@ -28,10 +28,9 @@ for row in table.findAll('tr'):
             sector_tickers[sector] = list()
         sector_tickers[sector].append(ticker)
 
-sector_tickers[sector].append('SPY')
-
-start = datetime.datetime(2010, 1, 1)
-end = datetime.datetime(2016, 12, 27)
+# Start and end dates for historical data
+start = datetime.datetime(2010, 1, 1)  # start date
+end = datetime.datetime(2016, 12, 27) # end date
 
 myKeys = sector_tickers.keys()
 
