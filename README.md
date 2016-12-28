@@ -1,7 +1,7 @@
 # S&P 500 Data Puller
-Downloads historical data of all tickers in the SP 500.
+Downloads historical data of all tickers in the S&P 500.
 
-"myWebscraper.py" has two main portions. 
+"myWebscraper.py" has two main portions which are described below.
 
 ## Section 1: Scrape Wikipedia page with list of S&P 500 companies 
 The first part of this code scrapes the relevant wikipedia page to get all the tickers in the S&P 500 according to the market sector and stores it in a python dictionary database. 
