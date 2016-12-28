@@ -10,6 +10,8 @@ import datetime
 from bs4 import BeautifulSoup
 import csv
 
+
+#### Section 1: Scrapes wikipedia page to get all tickers in the S&P 500
 thisurl = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
 
 myPage = urllib2.urlopen(thisurl)
@@ -28,6 +30,7 @@ for row in table.findAll('tr'):
             sector_tickers[sector] = list()
         sector_tickers[sector].append(ticker)
 
+#### Section 2: Queries Yahoo Finance for historical data on tickers
 # Start and end dates for historical data
 start = datetime.datetime(2010, 1, 1)  # start date
 end = datetime.datetime(2016, 12, 27) # end date
