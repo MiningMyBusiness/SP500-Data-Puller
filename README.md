@@ -1,5 +1,6 @@
 # SP500 Data Puller
 Downloads historical data of all tickers in the SP 500.
+
 "myWebscraper.py" has two main portions. 
 
 ## Section 1: Scrape Wikipedia page with list of SP500 companies 
