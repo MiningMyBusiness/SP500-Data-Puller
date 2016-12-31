@@ -37,9 +37,9 @@ end = datetime.datetime(2016, 12, 27) # end date
 
 myKeys = sector_tickers.keys()
 
-for i in xrange(1,len(myKeys)):
+for i in xrange(0,len(myKeys)):
     myTickers = sector_tickers[myKeys[i]]
-    for j in xrange(1,len(myTickers)):
+    for j in xrange(0,len(myTickers)):
         myData = web.DataReader(myTickers[j], 'yahoo', start, end)
         fileName = myTickers[j] + '.csv'
         myData.to_csv(fileName)
